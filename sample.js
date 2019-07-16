@@ -62,7 +62,7 @@ $(document).ready(function() {
         let achievement = get_achievement();
         let pass_or_failure = get_pass_or_failure();
         // By writing the following, if you click the button of "final judge", "Your grade is (the value of" rank "is put here). A process is implemented in which a light blue balloon with the text “(The value of“ judgment ”) is is output.
-        $('#declaration').append(`<label id="alert-indicate" class="alert alert-info">Your grade is  ${achievement}. You ${pass_or_failure} </label>`);
+        $('#declaration').html(`<label id="alert-indicate" class="alert alert-info">Your grade is  ${achievement}. You ${pass_or_failure} </label>`);
     };
 
     $('#national_language, #english, #mathematics, #science, #society').change(function() {
